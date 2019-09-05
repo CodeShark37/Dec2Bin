@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1567030911 source:c:\users\jk37\documents\projects\in development\decbin\main.c
+	"headers/main.h"
+
+1567032921 c:\users\jk37\documents\projects\in development\decbin\headers\logs.h
+	<stdint.h>
+
+1567032500 c:\users\jk37\documents\projects\in development\decbin\headers\convert.h
+	<stdint.h>
+
+1567014370 source:c:\users\jk37\documents\projects\in development\decbin\modules\convert.c
+	"../headers/convert.h"
+
+1567032921 source:c:\users\jk37\documents\projects\in development\decbin\modules\logs.c
+	"../headers/logs.h"
+
+1567032539 c:\users\jk37\documents\projects\in development\decbin\headers\hnd_file.h
+	<stdint.h>
+	<stdio.h>
+	<stdbool.h>
+	"logs.h"
+
+1567028698 source:c:\users\jk37\documents\projects\in development\decbin\modules\hnd_file.c
+	"../headers/hnd_file.h"
+
+1567033100 c:\users\jk37\documents\projects\in development\decbin\headers\main.h
+	<stdbool.h>
+	"logs.h"
+
