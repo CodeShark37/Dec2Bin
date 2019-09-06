@@ -17,7 +17,6 @@ int main(int argc,char **argv)
             else saveLog2F(&lc,false);
         break;
         default:puts("Error: Invalid Input File or options");
-
     }
     freeLogger(&lc);
 
