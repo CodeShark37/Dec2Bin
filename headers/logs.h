@@ -5,7 +5,7 @@
 #define NULL ((void *)0)
 
 struct log{
-    long long dec;
+    intmax_t dec;
     unsigned char *bin;
     struct log *next;
 };
@@ -19,7 +19,7 @@ typedef struct __logger{
 void initLogger(LOGGER* logger);
 void displayLogger(LOGGER* logger);
 void freeLogger(LOGGER* logger);
-void insertLog(LOGGER* logger,long long dec,unsigned char* bin);
+void insertLog(LOGGER* logger,intmax_t dec,unsigned char* bin);
 struct log* getLog(LOGGER* logger,uint16_t id);
 
 #endif

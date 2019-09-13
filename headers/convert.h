@@ -9,6 +9,6 @@
 #endif // SIZE_MAX
 
 extern void *__cdecl malloc(size_t _Size);
-unsigned char* dec2bin(long long dec);
+unsigned char* dec2bin(intmax_t dec);
 
 #endif

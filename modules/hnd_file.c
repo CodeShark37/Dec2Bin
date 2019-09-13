@@ -32,10 +32,12 @@ void saveLog2F(LOGGER *logger,bool op){
     out = fopen((const char*)fname+1,"w+");
     if(!out)puts("Error: Failed to create Output File");
     else{
+        struct log* _log = NULL;
         for(i=0;i<logger->size;i++){
+            _log = getLog(logger,i+1);
             if(op)
-                fprintf_s(out,"[%.2hu]:%s;\n",i+1,getLog(logger,i+1)->bin);
-            else fprintf_s(out,"[%.2hu]:%lld:%s;\n",i+1,getLog(logger,i+1)->dec,getLog(logger,i+1)->bin);
+                fprintf_s(out,"[%.2hu]:%s;\n",i+1,_log->bin);
+            else fprintf_s(out,"[%.2hu]:%lld:%s;\n",i+1,_log->dec,_log->bin);
         }
     }
     fclose(out);

@@ -24,7 +24,7 @@ struct log* getLog(LOGGER* logger,uint16_t id){
     return tmp;
 }
 
-void insertLog(LOGGER* logger,long long dec,unsigned char* bin){
+void insertLog(LOGGER* logger,intmax_t dec,unsigned char* bin){
     if(logger){
         struct log *tmp = NULL;
         tmp = (struct log*) malloc(sizeof(struct log));
